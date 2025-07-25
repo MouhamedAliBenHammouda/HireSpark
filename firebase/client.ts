@@ -6,19 +6,19 @@ import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD4IQEFFXtVLna_n8SU0C-vXxX5ZfTFs00",
-  authDomain: "prepwise-3a798.firebaseapp.com",
-  databaseURL: "https://prepwise-3a798-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "prepwise-3a798",
-  storageBucket: "prepwise-3a798.firebasestorage.app",
-  messagingSenderId: "655934372342",
-  appId: "1:655934372342:web:b1b7f331540a1a8f34efd7",
-  measurementId: "G-583M9P403H"
+  apiKey: "AIzaSyAcK6NFfoOJHdE41BVmLDbf1vEu-UJ_8u8",
+  authDomain: "prepwise-25d78.firebaseapp.com",
+  projectId: "prepwise-25d78",
+  storageBucket: "prepwise-25d78.firebasestorage.app",
+  messagingSenderId: "276049053690",
+  appId: "1:276049053690:web:18491e895fbbf8d8b10643",
+  measurementId: "G-CG12E3M7CH"
 };
 
 
 // Initialize Firebase
-const app = !getApp.length ? initializeApp(firebaseConfig):getApp();
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+// const analytics = getAnalytics(app);
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
